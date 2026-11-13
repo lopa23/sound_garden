@@ -22,6 +22,7 @@ It reaches Google Play as a **Trusted Web Activity (TWA)**: a small Android wrap
 3. **Prove that you own the site (Digital Asset Links)**
    - Android only hides the browser address bar if it finds `assetlinks.json` at the **domain root**: `https://lopa23.github.io/.well-known/assetlinks.json`.
    - The app currently lives under `/sound_garden/`, so this needs a separate repo named **`lopa23.github.io`** containing `.well-known/assetlinks.json` (plus an empty `.nojekyll` file so GitHub serves the dot-folder).
+   - **Done 2026-11-13:** repo https://github.com/lopa23/lopa23.github.io (local copy: `Documents\lopa23.github.io`) serves an empty `[]` placeholder there. Replace it with the `assetlinks.json` from the PWABuilder zip and push.
    - After the first upload, add Google Play's **App signing key** SHA-256 fingerprint to that file as well (Play Console → Setup → App signing).
 
 4. **Fill in the Play Console** (you)
